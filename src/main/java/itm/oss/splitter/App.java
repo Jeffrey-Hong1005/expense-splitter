@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class App {
 
   private static final String DATA_FILE = "data/expenses.csv";
+  private static final String EXPORT_FILE = "data/settlement.csv";
+
 
   private final Scanner sc = new Scanner(System.in);
   private final ExpenseStore store = new ExpenseStore();
@@ -30,7 +32,7 @@ public class App {
       System.out.println("4) Suggest settlements");
       System.out.println("5) Summary by category");
       System.out.println("6) Summary by person");
-      System.out.println("7) Export settlements CSV");
+      System.out.println("7) Export settlements to CSV");
       System.out.println("0) Exit");
       int choice = readInt("Select option: ");
 
